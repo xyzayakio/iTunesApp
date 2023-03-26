@@ -1,7 +1,7 @@
-package com.example.itunesapp.utils
+package com.example.itunesapp.app
 
-import com.example.itunesapp.repository.ApiRepository
-import com.example.itunesapp.repository.ApiService
+import com.example.itunesapp.api.ApiRepository
+import com.example.itunesapp.api.ApiService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapters.Rfc3339DateJsonAdapter
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
