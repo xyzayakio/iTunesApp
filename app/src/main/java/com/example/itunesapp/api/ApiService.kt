@@ -1,4 +1,4 @@
-package com.example.itunesapp.repository
+package com.example.itunesapp.api
 
 import com.example.itunesapp.model.GetAlbumListResponse
 import retrofit2.Call

@@ -1,4 +1,4 @@
-package com.example.itunesapp.repository
+package com.example.itunesapp.api
 
 import com.example.itunesapp.model.GetAlbumListResponse
 import retrofit2.Call
@@ -7,7 +7,8 @@ import retrofit2.awaitResponse
 
 class ApiRepository(private val apiService: ApiService) {
 
-    suspend fun getAlbumList(): ApiResponse<GetAlbumListResponse> = apiService.getAlbumList().handleApiResponse()
+    suspend fun getAlbumList(): ApiResponse<GetAlbumListResponse> =
+        apiService.getAlbumList().handleApiResponse()
 
     private suspend inline fun <reified T> Call<T>.handleApiResponse(): ApiResponse<T> {
         return try {
